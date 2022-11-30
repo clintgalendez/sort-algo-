@@ -23,6 +23,7 @@ const AnimatedBlock = ({ item, props: { x, ...rest }, length, index, isSwap, wid
       style={{
         ...rest,
         height: item.height * 10,
+        maxHeight: 500,
         width: width,
         zIndex: length - index,
         transform: x.interpolate((x) => `translate3d(${x}px,0,0)`),

@@ -18,6 +18,7 @@ const GenericSortScreen = ({ transitions, dataSize }) => {
       className="list"
       style={{
         transform: `translateX(-${translateXOfVisualizer(dataSize)}px)`,
+        height: 500,
       }}
     >
       {transitions.map(({ item, props: { x, ...rest } }, index) => {
