@@ -101,10 +101,11 @@ export const generateArray = (size, visualizerAlgorithm) => {
  */
 const generateDefaultArray = (size) => {
   let array = [];
+  let list = [5,67,890,1388,45,124,9,8,380,1325,95,49,2489,689,56]
   for (let i = 0; i < size; i++) {
     array.push({
       id: i,
-      height: generateValue(5, 20),
+      height: list[i],
       isSwap: false,
     });
   }
