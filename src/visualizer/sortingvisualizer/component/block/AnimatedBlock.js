@@ -22,7 +22,8 @@ const AnimatedBlock = ({ item, props: { x, ...rest }, length, index, isSwap, wid
       className="animated-block"
       style={{
         ...rest,
-        height: item.height * 10,
+        height: (item.height * 2),
+        maxHeight: 300,
         width: width,
         zIndex: length - index,
         transform: x.interpolate((x) => `translate3d(${x}px,0,0)`),
